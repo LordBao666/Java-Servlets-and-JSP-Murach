@@ -4,19 +4,30 @@ whose link is [Murach’s Java Servlets and JSP (3rd Edition)](https://www.murac
 .You can **DOWNLOAD** book applications and exercises from the official website  for **FREE**.
 Since the resources provided were implemented by NetBeans, I picked some projects and exported them to Intelli J IDEA.
 
+
 # Notes
 Nowadays, should we learn servlets and jsp? Are they outdated? If you have questions like these,you can check the links below
 - [Are servlets outdated?](https://www.quora.com/Are-servlets-outdated)
 - [Is jsp still used?](https://www.quora.com/Is-JSP-used-JSP-is-almost-unused-nowadays-but-Spring-Boot-is-very-popular-nowadays-and-it-uses-JS-Is-JSP-popular-or-not)
 
-In short, servlets are the solid foundation of web frameworks like spring, so they are never outdated. However, jsp is the oldest of the server-side rendered technologies, there are much better ones to replace.
+In short, servlets are the solid foundation of web frameworks like spring, so they are never outdated. However, jsp is the oldest of the server-side rendered technologies, 
+there are much better ones to replace.
 
 Therefore, **you need to grasp the concepts about servlets , and just know the very basic usage of jsp** (for the completeness of this book) .
+
 
 # More about the learning trip
 You can freely skip the chapter 10 -- how to use custom jsp tags.
 
-For those who are not familiar with MySQL, you can watch [MySQL Tutorial for Beginners ](https://www.youtube.com/watch?v=7S_tz1z_5bA) as the supplement of chapter 11 -- how to use a MySQL database.
+For those who are not familiar with MySQL, you can watch [MySQL Tutorial for Beginners ](https://www.youtube.com/watch?v=7S_tz1z_5bA) as 
+the supplement of chapter 11 -- how to use a MySQL database.
+
+Chapter 12 is about How to use JDBC to work with a database. **JDBC** is a java API that specifies how to interact with the database, and 
+different database vendors like mysql and oracle have their  own implementations. JDBC works on a low level, so it might be hard to use. 
+However, due to the fact that many ORM frameworks are built on JDBC, it is better to know how JDBC works. Besides JDBC, another topic in 
+the chapter is **connection pooling**,  the advent of which adds much convenience and efficiency to manipulating the database.
+Connection pooling is a technique to manage connections between the web server and database system, many companies have developed different products like C3P0 and druid.
+For more about JDBC, ORM Frameworks, Connection pooling, you can check  [Java and Database](https://www.marcobehler.com/guides/java-databases).
 
 
 
