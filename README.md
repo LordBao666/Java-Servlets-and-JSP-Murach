@@ -61,9 +61,9 @@ You might be puzzled by the differences between flush and commit, please check [
 and [how we can get jpa entity manager flush work](https://stackoverflow.com/questions/8863725/how-we-can-get-jpa-entitymanager-flush-work). After testing in
 my workspace, it seems like flush sends sql statements to database and commit asks the database to execute them.
 
-During the time I was working on the exercises, a lot of troubles showed up. First, Servlet 5.0 is compatible with tomcat 10, so if you run a project of servlet 4.0 
+During the time I was working on the exercises, a lot of troubles showed up. First, Servlet 5.0 is compatible with tomcat 10, so if you run a project of servlet 5.0 
 on tomcat 9 or a project of Servlet 4.0 on tomcat 10, you will get some exceptions like `servlet.ServletException: Error instantiating servlet class `. Find the 
-solution via this link:[servlet 5.0 jar throws compile error on javax servlet but servlet 4.0 jar does](https://stackoverflow.com/questions/64387472/servlet-5-0-jar-throws-compile-error-on-javax-servlet-but-servlet-4-0-jar-does)
+solution via this link : [servlet 5.0 jar throws compile error on javax servlet but servlet 4.0 jar does](https://stackoverflow.com/questions/64387472/servlet-5-0-jar-throws-compile-error-on-javax-servlet-but-servlet-4-0-jar-does)
 . Second, if you work on a project of Servlet 5.0 and jstl-core 1.2, you may encounter exception like `org.apache.jasper.JasperException`, that is still 
 compatibility  problem, check this: [how to install jstl on tomcat](https://stackoverflow.com/questions/4928271/how-to-install-jstl-it-fails-with-the-absolute-uri-cannot-be-resolved-or-una).
 
