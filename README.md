@@ -6,7 +6,7 @@ Since the resources provided were implemented by NetBeans, I picked some project
 
 
 # Notes
-Nowadays, should we learn servlets and jsp? Are they outdated? If you have questions like these,you can check the links below
+Nowadays, should we learn servlets and jsp ? Are they outdated ? If you have questions like these,you can check the links below
 - [Are servlets outdated?](https://www.quora.com/Are-servlets-outdated)
 - [Is jsp still used?](https://www.quora.com/Is-JSP-used-JSP-is-almost-unused-nowadays-but-Spring-Boot-is-very-popular-nowadays-and-it-uses-JS-Is-JSP-popular-or-not)
 
@@ -24,6 +24,7 @@ You can freely skip this chapter.
 ## Chapter 11 -- how to use a MySQL database
 For those who are not familiar with MySQL, you can watch [MySQL Tutorial for Beginners ](https://www.youtube.com/watch?v=7S_tz1z_5bA) as 
 the supplement of this chapter.
+
 
 ## Chapter 12 -- How to use JDBC to work with a database
 
@@ -64,9 +65,37 @@ my workspace, it seems like flush sends sql statements to database and commit as
 During the time I was working on the exercises, a lot of troubles showed up. First, Servlet 5.0 is compatible with tomcat 10, so if you run a project of servlet 5.0 
 on tomcat 9 or a project of Servlet 4.0 on tomcat 10, you will get some exceptions like `servlet.ServletException: Error instantiating servlet class `. Find the 
 solution via this link : [servlet 5.0 jar throws compile error on javax servlet but servlet 4.0 jar does](https://stackoverflow.com/questions/64387472/servlet-5-0-jar-throws-compile-error-on-javax-servlet-but-servlet-4-0-jar-does)
-. Second, if you work on a project of Servlet 5.0 and jstl-core 1.2, you may encounter exception like `org.apache.jasper.JasperException`, that is still 
+. Seco  nd, if you work on a project of Servlet 5.0 and jstl-core 1.2, you may encounter exception like `org.apache.jasper.JasperException`, that is still 
 compatibility  problem, check this: [how to install jstl on tomcat](https://stackoverflow.com/questions/4928271/how-to-install-jstl-it-fails-with-the-absolute-uri-cannot-be-resolved-or-una).
 
+
+## Chap14 -- How to use JavaMail to send email
+The exercise of the chapter is associated with two kinds of SMTP servers, one is local SMTP server, 
+and the other is remote SMTP server. And both of them are  the servers that **SEND** emails.
+
+
+![how email works](.README_images/howemailworks.png)
+
+To be more specific, in the picture above, we should concentrate on two things: one is the program we are developing, 
+ and two is the SMTP server sends emails.
+
+If you are working on the local SMTP server,  you should install one first. Check the [local-smtp-server-to-send-mail](https://stackoverflow.com/questions/14570471/local-smtp-server-to-send-mail),
+and the one I downloaded is SMTP4DEV. It is important to know that the local SMTP sever we are using are only for **DEVELOPING and 
+TESTING**, and it does not really send emails through internet ,so the email address of the sender and the recipient(s) does not
+matter.
+
+If you are working on the remote SMTP sever,and Gmail happens to be the one you pick, I assume you will encounter
+`javax.mail.AuthenticationFailedException`. If so, check this [javax-mail-authenticationfailedexception](https://stackoverflow.com/questions/32303910/javax-mail-authenticationfailedexception-java-mail?rq=3)
+, and it tells you to visit the Google official website to check something like less secure apps. If you don't have the turn on/off option,
+check this [video](https://www.youtube.com/watch?v=Gu4ifdBkrNM), my case is slightly  different from the video , but
+the result is the same : **the 16 bits application password generated for replacing password bound with your gmail account**,
+i.e, you should use the 16 bits application password instead of  you own gmail password. And you should know that the gmail 
+smtp server will truly send emails, and the sender is always the account bound with the program even if you type in someone else's 
+email address in the program, and the recipient(s) is(are) the real ones to receive your emails.
+
+If you are close enough, you will see that the hosts and ports of the local SMTP sever are different from the ones of  remote 
+SMTP servers. It is true, for more details, you should catch a lesson called Network, but  for now, just leave them behind and 
+keep on.
 
 
 
