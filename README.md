@@ -93,7 +93,7 @@ i.e, you should use the 16 bits application password instead of  you own gmail p
 smtp server will truly send emails, and the sender is always the account bound with the program even if you type in someone else's 
 email address in the program, and the recipient(s) is(are) the real ones to receive your emails.
 
-If you are close enough, you will see that the hosts and ports of the local SMTP sever are different from the ones of  remote 
+If you are careful enough, you will see that the hosts and ports of the local SMTP sever are different from the ones of  remote 
 SMTP servers. It is true, for more details, you should catch a lesson called Network, but  for now, just leave them behind and 
 keep on.
 
