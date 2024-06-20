@@ -18,6 +18,8 @@ Therefore, **you need to grasp the concepts about servlets , and just know the v
 
 # More about the learning trip
 
+The chapters I don't mention here are informative enough, no more hints are needed, just read. If you encounter problems, search the internet.
+
 ## Chapter 10 -- how to use custom jsp tags.
 You can freely skip this chapter.
 
@@ -94,10 +96,16 @@ smtp server will truly send emails, and the sender is always the account bound w
 email address in the program, and the recipient(s) is(are) the real ones to receive your emails.
 
 If you are careful enough, you will see that the hosts and ports of the local SMTP sever are different from the ones of  remote 
-SMTP servers. It is true, for more details, you should catch a lesson called Network, but  for now, just leave them behind and 
+SMTP servers. It is true, for more details, you should take a lesson called Network, but  for now, just leave them behind and 
 keep on.
 
+## Chap16 -- How to restrict access to a web resource
+First of all, The JDBCRealm is obsolete and does not work in my case. If you simply replace JDBCRealm with DataSourceRealm, it does not work either.
+Instead, you should try the DataSourceRealm with connection pooling mentioned in the book and that works for me.
 
+When working on form-based authentication, use post method instead of get method in `admin/login_error.html` and `admin/login.html`,
+for it is much safer and if you don't do so, something weird will happen. Besides, If you find the css effect is not correct , that 
+is the path problem, replace `<a href="admin">` with `<a href="admin/index.jsp">`
 
 
 
