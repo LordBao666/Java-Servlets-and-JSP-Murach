@@ -71,7 +71,7 @@ solution via this link : [servlet 5.0 jar throws compile error on javax servlet 
 compatibility  problem, check this: [how to install jstl on tomcat](https://stackoverflow.com/questions/4928271/how-to-install-jstl-it-fails-with-the-absolute-uri-cannot-be-resolved-or-una).
 
 
-## Chap14 -- How to use JavaMail to send email
+## Chapter14 -- How to use JavaMail to send email
 The exercise of the chapter is associated with two kinds of SMTP servers, one is local SMTP server, 
 and the other is remote SMTP server. And both of them are  the servers that **SEND** emails.
 
@@ -99,13 +99,13 @@ If you are careful enough, you will see that the hosts and ports of the local SM
 SMTP servers. It is true, for more details, you should take a lesson called Network, but  for now, just leave them behind and 
 keep on.
 
-## Chap16 -- How to restrict access to a web resource
+## Chapter16 -- How to restrict access to a web resource
 First of all, The JDBCRealm is obsolete and does not work in my case. If you simply replace JDBCRealm with DataSourceRealm, it does not work either.
 Instead, you should try the DataSourceRealm with connection pooling mentioned in the book and that works for me.
 
 When working on form-based authentication, use post method instead of get method in `admin/login_error.html` and `admin/login.html`,
 for it is much safer and if you don't do so, something weird will happen. Besides, If you find the css effect is not correct , that 
-is the path problem, replace `<a href="admin">` with `<a href="admin/index.jsp">`
+is the path problem, replace `<a href="admin">` with `<a href="admin/index.jsp">` in `index.jsp`.
 
 
 
