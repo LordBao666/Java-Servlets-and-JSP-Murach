@@ -107,6 +107,11 @@ When working on form-based authentication, use post method instead of get method
 for it is much safer and if you don't do so, something weird will happen. Besides, If you find the css effect is not correct , that 
 is the path problem, replace `<a href="admin">` with `<a href="admin/index.jsp">` in `index.jsp`.
 
+## Chapter18 -- How to work with http requests and responses
+This is an essential chapter about http requests and responses, which you should not skip.  Most importantly, 
+it talks about how to deal with different formats of files, the technique we  have being using all the time. 
+
+
 
 
 
