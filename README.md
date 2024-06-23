@@ -112,6 +112,7 @@ This is an essential chapter about http requests and responses, which you should
 it talks about how to deal with different formats of files, the technique we  have being using all the time. 
 
 
-
+## Chapter21 -- How to work with JavaServer Faces
+Since it has nothing to do with the Section 5 -- The Music Store Website,  I skip it.
 
 
